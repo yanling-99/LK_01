@@ -1,0 +1,55 @@
+// color set
+$fontColor: #262727;
+$reactColor: #d35738;
+$H1Color: #b5a997;
+$BGColor: #0e0f0f;
+$white: #ffffff;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  width: 100%;
+  position: relative;
+
+  img.portrait {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+
+  section.home {
+    nav {
+      color: $white;
+      font-family: "Inter", sans-serif;
+      position: absolute;
+    }
+
+    nav.navbar{
+        position: absolute;
+        right:30px;
+        top:20px;
+        
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            row-gap:5px;
+        }
+    }
+
+  }
+}

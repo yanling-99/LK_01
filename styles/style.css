@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   border: 1px solid red;
+  box-sizing: border-box;
 }
 
 h1,
@@ -15,24 +16,27 @@ h6 {
 
 body {
   width: 100%;
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
-body img.portrait {
-  position: absolute;
-  z-index: -1;
+body main {
+  max-width: 1200px;
+  min-width: 320px;
+}
+body main section.home img.portrait {
   width: 100%;
 }
-body section.home nav {
+body main section.home nav {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   position: absolute;
 }
-body section.home nav.navbar {
+body main section.home nav.navbar {
   position: absolute;
   right: 30px;
   top: 20px;
 }
-body section.home nav.navbar ul {
+body main section.home nav.navbar ul {
   list-style: none;
   display: flex;
   flex-direction: column;

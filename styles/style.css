@@ -22,21 +22,28 @@ body {
 body main {
   max-width: 1200px;
   min-width: 320px;
-}
-body main section.home img.portrait {
   width: 100%;
+}
+body main section.home {
+  position: relative;
+}
+body main section.home img.bg {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 body main section.home nav {
   color: #ffffff;
   font-family: "Inter", sans-serif;
-  position: absolute;
 }
-body main section.home nav.navbar {
+body main section.home nav nav.navbar {
   position: absolute;
   right: 30px;
   top: 20px;
 }
-body main section.home nav.navbar ul {
+body main section.home nav nav.navbar ul {
   list-style: none;
   display: flex;
   flex-direction: column;

@@ -28,7 +28,7 @@ body {
   main {
     max-width: 1200px;
     min-width: 320px;
-    width:100%;
+    width: 100%;
 
     section.home {
       position: relative;
@@ -36,26 +36,22 @@ body {
         position: absolute;
         width: 100%;
         z-index: -1;
-        top:0;    
-        left:0;
+        top: 0;
+        left: 0;
       }
-        // background-image: url(../imgs/bg_main_desktop.png);
-      nav {
+
+      nav.navbar {
         color: $white;
         font-family: "Inter", sans-serif;
-        
+        position: absolute;
+        right: 30px;
+        top: 20px;
 
-        nav.navbar {
-          position: absolute;
-          right: 30px;
-          top: 20px;
-
-          ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            row-gap: 5px;
-          }
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          row-gap: 5px;
         }
       }
     }

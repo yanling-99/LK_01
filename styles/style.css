@@ -15,7 +15,7 @@ h6 {
   font-weight: normal;
 }
 
-.flex-col-center, body main section.about div.what_i_do div, body main section.about div.what_i_do, body main section.about div.about_me div, body main section.about div.about_me {
+.flex-col-center, body main section.about div.what_i_do div, body main section.about div.what_i_do, body main section.about div.about_me div, body main section.about div.about_me, body main section.home nav.navbar ul span.right-side, body main section.home nav.navbar ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,6 +25,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: #0e0f0f;
 }
 body main {
   max-width: 1280px;
@@ -37,27 +38,55 @@ body main section .sub_heading {
   color: #b5a997;
 }
 body main section.home {
-  position: relative;
-}
-body main section.home img.bg {
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-  top: 0;
-  left: 0;
+  min-height: 187vw;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  background-color: #0e0f0f;
+  background-image: url(../imgs/bg_main_mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-size: 1rem;
 }
 body main section.home nav.navbar {
-  color: #ffffff;
-  font-family: "Inter", sans-serif;
-  position: absolute;
-  right: 30px;
-  top: 20px;
+  width: 100%;
 }
 body main section.home nav.navbar ul {
   list-style: none;
+  font-weight: 700;
+  justify-content: start;
+  align-items: end;
+}
+body main section.home nav.navbar ul span.left-side {
+  align-self: start;
+  position: absolute;
+}
+body main section.home nav.navbar ul span.right-side {
+  align-items: end;
+  row-gap: 0.5rem;
+}
+body main section.home img.title {
+  width: 70%;
+  margin-top: 75%;
+  margin-right: 10%;
+}
+body main section.home img.logo {
+  width: 32%;
+  margin-top: 5%;
+  align-self: end;
+  margin-right: 2%;
+}
+body main section.home div.bottomContainer {
   display: flex;
-  flex-direction: column;
-  row-gap: 5px;
+  margin-top: 5%;
+}
+body main section.home div.bottomContainer img.be_icon {
+  align-self: end;
+  position: absolute;
+  left: 16px;
 }
 body main section.about {
   width: 100%;
@@ -95,7 +124,53 @@ body main section.about div.what_i_do div span {
 }
 
 @media (min-width: 768px) {
+  body main section.home {
+    min-height: 20vw;
+    padding-inline: 5rem;
+    padding-block: 2rem;
+    background-image: url(../imgs/bg_main_ipad.png);
+  }
+  body main section.home img.title {
+    width: 70%;
+    margin-top: 42%;
+    margin-right: 35%;
+  }
+  body main section.home img.logo {
+    width: 25%;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  body main section.home div.bottomContainer {
+    margin-top: 0;
+  }
+  body main section.home div.bottomContainer img.be_icon {
+    left: 80px;
+  }
   body main section.about {
     padding-inline: 5rem;
+  }
+}
+@media (min-width: 1280px) {
+  body main section.home {
+    min-height: 20vw;
+    padding-inline: 5rem;
+    padding-block: 2rem;
+    background-image: url(../imgs/bg_main_desktop.png);
+    font-size: 1.25rem;
+  }
+  body main section.home img.title {
+    width: 50%;
+    margin-top: 18%;
+    margin-right: 45%;
+  }
+  body main section.home img.logo {
+    width: 20%;
+    margin-right: 2rem;
+  }
+  body main section.home div.bottomContainer {
+    margin-top: 0;
+  }
+  body main section.home div.bottomContainer img.be_icon {
+    left: 80px;
   }
 }/*# sourceMappingURL=style.css.map */

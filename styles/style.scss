@@ -6,7 +6,7 @@ $BGColor: #0e0f0f;
 $white: #ffffff;
 
 // break points
-$sm: 414px;
+$sm: 425px;
 $md: 768px;
 $lg: 1280px;
 
@@ -54,71 +54,52 @@ body {
     }
 
     section.home {
-      // border: 1px solid red;
-      min-height: 187vw;
-      padding-inline: 1rem;
-      padding-block: 1rem;
-      background-color: $BGColor;
-      background-image: url(../imgs/bg_main_mobile.png);
+      background-image: url("../imgs/bg_main_mobile.png");
+      background-size: 100%;
       background-repeat: no-repeat;
-      background-size: contain;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: center;
-      font-size: 1rem;
+      background-position: center;
+      height: 100vh;
+      position: relative;
 
       nav.navbar {
-        width: 100%;
-        // border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        line-height: 25px;
+        padding: 1rem;
+        text-align: right;
 
         ul {
           list-style: none;
-          font-weight: 700;
-          @extend .flex-col-center;
-          justify-content: start;
-          align-items: end;
-
-          span.left-side {
-            align-self: start;
-            position: absolute;
-          }
-
-          span.right-side {
-            @extend .flex-col-center;
-            align-items: end;
-            row-gap: 0.5rem;
-          }
         }
       }
 
+      img {
+        position: absolute;
+      }
       img.title {
-        width: 70%;
-        margin-top: 75%;
-        margin-right: 10%;
-        // border: 1px solid red;
+        top: 50%;
+        left: 15%;
+        content: url("../imgs/img_title_mobile.png");
       }
 
       img.logo {
-        width: 32%;
-        margin-top: 5%;
-        align-self: end;
-        margin-right: 2%;
-        // border: 1px solid red;
+        bottom: 15%;
+        right: 5%;
+        content: url("../imgs/logo_white_mobile.png");
       }
 
-      div.bottomContainer {
-        // border: 1px solid red;
-        display: flex;
-        margin-top: 5%;
+      img.be_icon {
+        bottom: 8%;
+        left: 3%;
+        content: url("../imgs/img_behance.png");
+      }
 
-        img.be_icon {
-          // border: 1px solid red;
-          align-self: end;
-          position: absolute;
-          left: 16px;
-          // margin-right: ;
-        }
+      img.nextPage {
+        bottom: 8%;
+        left: 50%;
+        transform: translateX(-50%);
+        content: url("../imgs/img_nextPage.png");
       }
     }
 
@@ -178,32 +159,19 @@ body {
   body {
     main {
       section.home {
-        min-height: 20vw;
-        padding-inline: 5rem;
-        padding-block: 2rem;
         background-image: url(../imgs/bg_main_ipad.png);
 
+        nav.navbar {
+          padding: 3rem;
+        }
+
         img.title {
-          width: 70%;
-          margin-top: 42%;
-          margin-right: 35%;
-          // border: 1px solid red;
+          left: 7%;
+          content: url("../imgs/img_title_ipad.png");
         }
-
         img.logo {
-          width: 25%;
-          margin-top: 0;
-          margin-right: 0;
-          // position: absolute;
-          // border: 1px solid red;
-        }
-
-        div.bottomContainer {
-          margin-top: 0;
-
-          img.be_icon {
-            left: 80px;
-          }
+          bottom: 8%;
+          content: url("../imgs/logo_white_ipad.png");
         }
       }
 
@@ -218,32 +186,18 @@ body {
   body {
     main {
       section.home {
-        min-height: 20vw;
-        padding-inline: 5rem;
-        padding-block: 2rem;
         background-image: url(../imgs/bg_main_desktop.png);
-        font-size: 1.25rem;
+
+        nav.navbar {
+        }
 
         img.title {
-          width: 50%;
-          margin-top: 18%;
-          margin-right: 45%;
-          // border: 1px solid red;
+          top: 43%;
+          content: url("../imgs/img_title_desktop.png");
         }
-
         img.logo {
-          width: 20%;
-          margin-right: 2rem;
-          // position: absolute;
-          // border: 1px solid red;
-        }
-
-        div.bottomContainer {
-          margin-top: 0;
-
-          img.be_icon {
-            left: 80px;
-          }
+          right: 8%;
+          content: url("../imgs/logo_white_desktop.png");
         }
       }
     }

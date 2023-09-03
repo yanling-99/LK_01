@@ -15,7 +15,7 @@ h6 {
   font-weight: normal;
 }
 
-.flex-col-center, body main section.about div.what_i_do div, body main section.about div.what_i_do, body main section.about div.about_me div, body main section.about div.about_me, body main section.home nav.navbar ul span.right-side, body main section.home nav.navbar ul {
+.flex-col-center, body main section.about div.what_i_do div, body main section.about div.what_i_do, body main section.about div.about_me div, body main section.about div.about_me {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,55 +38,47 @@ body main section .sub_heading {
   color: #b5a997;
 }
 body main section.home {
-  min-height: 187vw;
-  padding-inline: 1rem;
-  padding-block: 1rem;
-  background-color: #0e0f0f;
-  background-image: url(../imgs/bg_main_mobile.png);
+  background-image: url("../imgs/bg_main_mobile.png");
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  font-size: 1rem;
+  background-position: center;
+  height: 100vh;
+  position: relative;
 }
 body main section.home nav.navbar {
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  line-height: 25px;
+  padding: 1rem;
+  text-align: right;
 }
 body main section.home nav.navbar ul {
   list-style: none;
-  font-weight: 700;
-  justify-content: start;
-  align-items: end;
 }
-body main section.home nav.navbar ul span.left-side {
-  align-self: start;
+body main section.home img {
   position: absolute;
-}
-body main section.home nav.navbar ul span.right-side {
-  align-items: end;
-  row-gap: 0.5rem;
 }
 body main section.home img.title {
-  width: 70%;
-  margin-top: 75%;
-  margin-right: 10%;
+  top: 50%;
+  left: 15%;
+  content: url("../imgs/img_title_mobile.png");
 }
 body main section.home img.logo {
-  width: 32%;
-  margin-top: 5%;
-  align-self: end;
-  margin-right: 2%;
+  bottom: 15%;
+  right: 5%;
+  content: url("../imgs/logo_white_mobile.png");
 }
-body main section.home div.bottomContainer {
-  display: flex;
-  margin-top: 5%;
+body main section.home img.be_icon {
+  bottom: 8%;
+  left: 3%;
+  content: url("../imgs/img_behance.png");
 }
-body main section.home div.bottomContainer img.be_icon {
-  align-self: end;
-  position: absolute;
-  left: 16px;
+body main section.home img.nextPage {
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  content: url("../imgs/img_nextPage.png");
 }
 body main section.about {
   width: 100%;
@@ -125,26 +117,18 @@ body main section.about div.what_i_do div span {
 
 @media (min-width: 768px) {
   body main section.home {
-    min-height: 20vw;
-    padding-inline: 5rem;
-    padding-block: 2rem;
     background-image: url(../imgs/bg_main_ipad.png);
   }
+  body main section.home nav.navbar {
+    padding: 3rem;
+  }
   body main section.home img.title {
-    width: 70%;
-    margin-top: 42%;
-    margin-right: 35%;
+    left: 7%;
+    content: url("../imgs/img_title_ipad.png");
   }
   body main section.home img.logo {
-    width: 25%;
-    margin-top: 0;
-    margin-right: 0;
-  }
-  body main section.home div.bottomContainer {
-    margin-top: 0;
-  }
-  body main section.home div.bottomContainer img.be_icon {
-    left: 80px;
+    bottom: 8%;
+    content: url("../imgs/logo_white_ipad.png");
   }
   body main section.about {
     padding-inline: 5rem;
@@ -152,25 +136,14 @@ body main section.about div.what_i_do div span {
 }
 @media (min-width: 1280px) {
   body main section.home {
-    min-height: 20vw;
-    padding-inline: 5rem;
-    padding-block: 2rem;
     background-image: url(../imgs/bg_main_desktop.png);
-    font-size: 1.25rem;
   }
   body main section.home img.title {
-    width: 50%;
-    margin-top: 18%;
-    margin-right: 45%;
+    top: 43%;
+    content: url("../imgs/img_title_desktop.png");
   }
   body main section.home img.logo {
-    width: 20%;
-    margin-right: 2rem;
-  }
-  body main section.home div.bottomContainer {
-    margin-top: 0;
-  }
-  body main section.home div.bottomContainer img.be_icon {
-    left: 80px;
+    right: 8%;
+    content: url("../imgs/logo_white_desktop.png");
   }
 }/*# sourceMappingURL=style.css.map */

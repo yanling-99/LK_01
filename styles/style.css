@@ -29,8 +29,8 @@ body {
 }
 body main {
   max-width: 1280px;
-  min-width: 320px;
   width: 100%;
+  min-width: 320px;
 }
 body main section .sub_heading {
   font-size: 16px;
@@ -42,8 +42,9 @@ body main section.home {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: 773px;
   position: relative;
+  margin-bottom: 8rem;
 }
 body main section.home nav.navbar {
   display: flex;
@@ -61,7 +62,8 @@ body main section.home img {
 }
 body main section.home img.title {
   top: 50%;
-  left: 15%;
+  left: 50%;
+  transform: translateX(-50%);
   content: url("../imgs/img_title_mobile.png");
 }
 body main section.home img.logo {
@@ -90,25 +92,26 @@ body main section.about div.about_me {
   width: 100%;
   min-height: 50vh;
   gap: 2rem;
+  padding-bottom: 15rem;
 }
 body main section.about div.about_me div {
   gap: 0.7rem;
 }
 body main section.about div.about_me div span.text {
-  font-size: 35px;
+  font-size: 8vw;
   font-style: italic;
   font-weight: 900;
   letter-spacing: -2px;
+  white-space: nowrap;
 }
 body main section.about div.about_me div .text1 {
-  font-size: 38px !important;
   color: #262727;
 }
 body main section.about div.about_me div .text2 {
   color: #d35738;
 }
 body main section.about div.what_i_do div span {
-  font-size: 60px;
+  font-size: 13vw;
   font-weight: 900;
   font-style: italic;
   color: #262727;
@@ -124,6 +127,7 @@ body main section.about div.what_i_do div span {
   }
   body main section.home img.title {
     left: 7%;
+    transform: none;
     content: url("../imgs/img_title_ipad.png");
   }
   body main section.home img.logo {
@@ -132,6 +136,15 @@ body main section.about div.what_i_do div span {
   }
   body main section.about {
     padding-inline: 5rem;
+  }
+  body main section.about div.about_me {
+    padding-bottom: 12rem;
+  }
+  body main section.about div.about_me .text {
+    font-size: 55px !important;
+  }
+  body main section.about div.what_i_do .text {
+    font-size: 80px !important;
   }
 }
 @media (min-width: 1280px) {
@@ -145,5 +158,11 @@ body main section.about div.what_i_do div span {
   body main section.home img.logo {
     right: 8%;
     content: url("../imgs/logo_white_desktop.png");
+  }
+  body main section.about {
+    padding-bottom: 18rem;
+  }
+  body main section.about div.about_me .text {
+    font-size: 80px !important;
   }
 }/*# sourceMappingURL=style.css.map */

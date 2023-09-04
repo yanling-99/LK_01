@@ -15,7 +15,7 @@ h6 {
   font-weight: normal;
 }
 
-.flex-col-center, body main section.about div.what_i_do div, body main section.about div.what_i_do, body main section.about div.about_me div, body main section.about div.about_me {
+.flex-col-center, body main section.history, body main section.about div.what_i_do div, body main section.about div.what_i_do, body main section.about div.about_me div, body main section.about div.about_me {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,6 +116,59 @@ body main section.about div.what_i_do div span {
   font-style: italic;
   color: #262727;
   white-space: nowrap;
+}
+body main section.history .pic {
+  background-image: url(../imgs/bg_history_mobile.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  position: relative;
+}
+body main section.history .pic h2 {
+  font-size: 1rem;
+  color: #b5a997;
+  font-weight: bold;
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+}
+body main section.history .desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main section.history .desc .item {
+  width: 100%;
+  border-bottom: 1px solid #b5a997;
+  display: flex;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  padding: 1.5rem;
+}
+body main section.history .desc .item h4 {
+  flex: 1 1 100px;
+  color: #b5a997;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section.history .desc .item div.workContent {
+  flex: 2 1 100px;
+  line-height: 1.8rem;
+  font-weight: bold;
+}
+body main section.history .desc .item div.workContent ul {
+  list-style: none;
+}
+body main section.history .desc .item div.workContent ul li {
+  color: #444c4c;
+}
+body main section.history .desc .item div.workContent ul li span {
+  color: #b5a997;
+  font-size: 1.25rem;
 }
 
 @media (min-width: 768px) {

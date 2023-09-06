@@ -125,6 +125,9 @@ body main section.history .pic {
   height: 500px;
   position: relative;
 }
+body main section.history .pic img {
+  display: none;
+}
 body main section.history .pic h2 {
   font-size: 1rem;
   color: #b5a997;
@@ -155,10 +158,17 @@ body main section.history .desc .item h4 {
   justify-content: center;
   align-items: center;
 }
+body main section.history .desc .item i {
+  display: none;
+}
 body main section.history .desc .item div.workContent {
   flex: 2 1 100px;
   line-height: 1.8rem;
   font-weight: bold;
+}
+body main section.history .desc .item div.workContent h3 {
+  color: #b5a997;
+  font-size: 1.25rem;
 }
 body main section.history .desc .item div.workContent ul {
   list-style: none;
@@ -199,6 +209,61 @@ body main section.history .desc .item div.workContent ul li span {
   body main section.about div.what_i_do .text {
     font-size: 80px !important;
   }
+  body main section.history {
+    flex-direction: row;
+    justify-content: center;
+    padding-inline: 5rem;
+    padding-block: 3rem;
+    margin-top: 10%;
+  }
+  body main section.history .pic {
+    flex: 1 1 50%;
+    background-image: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body main section.history .pic img {
+    display: block;
+    content: url(../imgs/img_history_ipad.png);
+  }
+  body main section.history .pic h2 {
+    top: -3rem;
+    left: 0;
+  }
+  body main section.history .desc {
+    flex: 1 1 50%;
+  }
+  body main section.history .desc .item {
+    border-bottom: none;
+    padding-inline: 0;
+    padding-block: 0 4rem;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  body main section.history .desc .item h4 {
+    display: none;
+  }
+  body main section.history .desc .item i {
+    flex: 1 1 5px;
+    display: block;
+    color: #444c4c;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 0.75rem;
+    position: relative;
+  }
+  body main section.history .desc .item i div.line {
+    display: block;
+    position: absolute;
+    left: 50%;
+    border-left: 1px solid #444c4c;
+    height: 300px;
+  }
+  body main section.history .desc .item div.workContent {
+    flex: 4 1 50px;
+  }
 }
 @media (min-width: 1280px) {
   body main section.home {
@@ -212,10 +277,16 @@ body main section.history .desc .item div.workContent ul li span {
     right: 8%;
     content: url("../imgs/logo_white_desktop.png");
   }
-  body main section.about {
-    padding-bottom: 18rem;
-  }
   body main section.about div.about_me .text {
     font-size: 80px !important;
+  }
+  body main section.history .pic img {
+    content: url(../imgs/img_history_desktop.png);
+  }
+  body main section.history .desc .item {
+    padding-block: 0 5rem;
+  }
+  body main section.history .desc .item i div.line {
+    height: 340px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -242,6 +242,78 @@ body {
         }
       }
     }
+
+    section.video{
+
+    }
+
+    section.beautiful{
+      position: relative;
+      padding-inline: 1rem;
+      padding-block: 3rem;
+
+      
+      h2{
+        font-weight: bold;
+        font-size: 1rem;
+        color: $H1Color;
+        border-bottom: 2px solid $H1Color;
+        padding-bottom: 0.5rem;
+      }
+
+      h3{
+        font-weight:900;
+        font-style:italic;
+        color: $fontColor;
+        font-size: 3rem;
+        margin-block: 3rem 10rem;
+      }
+
+      p{
+        position: absolute;
+        left: 1rem;
+        bottom: 20%;
+        color: $H1Color;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+
+      img.circles{
+        content: url(../imgs/img_beautiful_mobile.png);
+        position: absolute;
+        right: 1rem;
+        bottom: 20%;
+      }
+      .watchMore{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0.5rem;
+        // border: 1px solid red;
+
+        img.be_icon{
+          content: url(../imgs/img_behance.png);
+          // border: 1px solid red;
+        }
+
+        h4{
+          // border: 1px solid red;
+          color: $reactColor;
+          font-size: 1rem;
+          font-weight: bold;
+          // text-decoration: underline;
+          border-bottom: 1px solid $reactColor;
+        }
+      }
+    }
+
+    section.personalPic{
+      background-image: url(../imgs/bg_personalPic_mobile.png);
+      height: 60vh;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
   }
 }
 
@@ -352,6 +424,32 @@ body {
           }
         }
       }
+
+      section.beautiful{
+        padding-inline: 5rem;
+        padding-block: 3rem 5rem;
+
+        h3{
+          font-size: 4.5rem;
+          margin-block: 3rem 15rem;
+        }
+
+        p{
+          left: 5rem;
+          bottom: 25%;
+        }
+
+        img.circles{
+          content: url(../imgs/img_beautiful_ipad.png);
+          right:5rem;
+          bottom: 10%;
+        }
+      }
+
+      section.personalPic{
+        background-image: url(../imgs/bg_personalPic_ipad.png);
+        height: 60vh;
+      }  
     }
   }
 }
@@ -402,6 +500,25 @@ body {
           }
         }
       }
+
+      section.beautiful{
+        padding-block: 3rem 10rem;
+
+        p{
+          bottom: 40%;
+        }
+
+        img.circles{
+          content: url(../imgs/img_beautiful_desktop.png);
+          right: 15%;
+          bottom: 15%;
+        }
+      }
+
+      section.personalPic{
+        background-image: url(../imgs/bg_personalPic_desktop.png);
+        height: 100vh;
+      } 
     }
   }
 }

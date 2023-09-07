@@ -180,6 +180,62 @@ body main section.history .desc .item div.workContent ul li span {
   color: #b5a997;
   font-size: 1.25rem;
 }
+body main section.beautiful {
+  position: relative;
+  padding-inline: 1rem;
+  padding-block: 3rem;
+}
+body main section.beautiful h2 {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #b5a997;
+  border-bottom: 2px solid #b5a997;
+  padding-bottom: 0.5rem;
+}
+body main section.beautiful h3 {
+  font-weight: 900;
+  font-style: italic;
+  color: #262727;
+  font-size: 3rem;
+  margin-block: 3rem 10rem;
+}
+body main section.beautiful p {
+  position: absolute;
+  left: 1rem;
+  bottom: 20%;
+  color: #b5a997;
+  font-weight: bold;
+  font-size: 1rem;
+}
+body main section.beautiful img.circles {
+  content: url(../imgs/img_beautiful_mobile.png);
+  position: absolute;
+  right: 1rem;
+  bottom: 20%;
+}
+body main section.beautiful .watchMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+body main section.beautiful .watchMore img.be_icon {
+  content: url(../imgs/img_behance.png);
+}
+body main section.beautiful .watchMore h4 {
+  color: #d35738;
+  font-size: 1rem;
+  font-weight: bold;
+  border-bottom: 1px solid #d35738;
+}
+body main section.personalPic {
+  background-image: url(../imgs/bg_personalPic_mobile.png);
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 @media (min-width: 768px) {
   body main section.home {
@@ -264,6 +320,27 @@ body main section.history .desc .item div.workContent ul li span {
   body main section.history .desc .item div.workContent {
     flex: 4 1 50px;
   }
+  body main section.beautiful {
+    padding-inline: 5rem;
+    padding-block: 3rem 5rem;
+  }
+  body main section.beautiful h3 {
+    font-size: 4.5rem;
+    margin-block: 3rem 15rem;
+  }
+  body main section.beautiful p {
+    left: 5rem;
+    bottom: 25%;
+  }
+  body main section.beautiful img.circles {
+    content: url(../imgs/img_beautiful_ipad.png);
+    right: 5rem;
+    bottom: 10%;
+  }
+  body main section.personalPic {
+    background-image: url(../imgs/bg_personalPic_ipad.png);
+    height: 60vh;
+  }
 }
 @media (min-width: 1280px) {
   body main section.home {
@@ -288,5 +365,20 @@ body main section.history .desc .item div.workContent ul li span {
   }
   body main section.history .desc .item i div.line {
     height: 340px;
+  }
+  body main section.beautiful {
+    padding-block: 3rem 10rem;
+  }
+  body main section.beautiful p {
+    bottom: 40%;
+  }
+  body main section.beautiful img.circles {
+    content: url(../imgs/img_beautiful_desktop.png);
+    right: 15%;
+    bottom: 15%;
+  }
+  body main section.personalPic {
+    background-image: url(../imgs/bg_personalPic_desktop.png);
+    height: 100vh;
   }
 }/*# sourceMappingURL=style.css.map */

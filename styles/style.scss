@@ -243,17 +243,15 @@ body {
       }
     }
 
-    section.video{
-
+    section.video {
     }
 
-    section.beautiful{
+    section.beautiful {
       position: relative;
       padding-inline: 1rem;
       padding-block: 3rem;
 
-      
-      h2{
+      h2 {
         font-weight: bold;
         font-size: 1rem;
         color: $H1Color;
@@ -261,15 +259,15 @@ body {
         padding-bottom: 0.5rem;
       }
 
-      h3{
-        font-weight:900;
-        font-style:italic;
+      h3 {
+        font-weight: 900;
+        font-style: italic;
         color: $fontColor;
         font-size: 3rem;
         margin-block: 3rem 10rem;
       }
 
-      p{
+      p {
         position: absolute;
         left: 1rem;
         bottom: 20%;
@@ -278,25 +276,25 @@ body {
         font-size: 1rem;
       }
 
-      img.circles{
+      img.circles {
         content: url(../imgs/img_beautiful_mobile.png);
         position: absolute;
         right: 1rem;
         bottom: 20%;
       }
-      .watchMore{
+      .watchMore {
         display: flex;
         justify-content: center;
         align-items: center;
         column-gap: 0.5rem;
         // border: 1px solid red;
 
-        img.be_icon{
+        img.be_icon {
           content: url(../imgs/img_behance.png);
           // border: 1px solid red;
         }
 
-        h4{
+        h4 {
           // border: 1px solid red;
           color: $reactColor;
           font-size: 1rem;
@@ -307,12 +305,55 @@ body {
       }
     }
 
-    section.personalPic{
+    section.personalPic {
       background-image: url(../imgs/bg_personalPic_mobile.png);
       height: 60vh;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+    }
+
+    section.connect {
+      position: relative;
+      padding-inline: 1rem;
+      padding-block: 3rem;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h2 {
+        font-weight: bold;
+        font-size: 1rem;
+        color: $H1Color;
+        border-bottom: 2px solid $H1Color;
+        padding-bottom: 0.5rem;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+
+        .item {
+
+          p {
+            color: $H1Color;
+          }
+
+          span {
+            color: $H1Color;
+            font-weight: bold;
+          }
+        }
+      }
+
+      img.logo_footer {
+        content: url(../imgs/logo_footer.png);
+        position: absolute;
+        right: 1rem;
+        bottom: 3rem;
+      }
     }
   }
 }
@@ -425,31 +466,46 @@ body {
         }
       }
 
-      section.beautiful{
+      section.beautiful {
         padding-inline: 5rem;
         padding-block: 3rem 5rem;
 
-        h3{
+        h3 {
           font-size: 4.5rem;
           margin-block: 3rem 15rem;
         }
 
-        p{
+        p {
           left: 5rem;
           bottom: 25%;
         }
 
-        img.circles{
+        img.circles {
           content: url(../imgs/img_beautiful_ipad.png);
-          right:5rem;
+          right: 5rem;
           bottom: 10%;
         }
       }
 
-      section.personalPic{
+      section.personalPic {
         background-image: url(../imgs/bg_personalPic_ipad.png);
         height: 60vh;
-      }  
+      }
+
+      section.connect {
+        min-height: 350px;
+        padding: 5rem;
+
+        .content {
+          flex-direction: row;
+          column-gap: 2rem;
+        }
+
+        img.logo_footer{
+          right: 5rem;
+          bottom: 5rem;
+        }
+      }
     }
   }
 }
@@ -492,7 +548,6 @@ body {
             padding-block: 0 5rem;
 
             i {
-
               div.line {
                 height: 340px;
               }
@@ -501,24 +556,34 @@ body {
         }
       }
 
-      section.beautiful{
+      section.beautiful {
         padding-block: 3rem 10rem;
 
-        p{
+        p {
           bottom: 40%;
         }
 
-        img.circles{
+        img.circles {
           content: url(../imgs/img_beautiful_desktop.png);
           right: 15%;
           bottom: 15%;
         }
       }
 
-      section.personalPic{
+      section.personalPic {
         background-image: url(../imgs/bg_personalPic_desktop.png);
         height: 100vh;
-      } 
+      }
+
+      section.connect {
+        min-height: 450px;
+        padding-inline: 5rem;
+        padding-block: 7rem;
+
+        .content {
+          column-gap: 6rem;
+        }
+      }
     }
   }
 }

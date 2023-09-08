@@ -55,7 +55,9 @@ body {
     }
 
     section.home {
-      background-image: url("../imgs/bg_main_mobile.png");
+      background-image: linear-gradient(to bottom, #0e0f0f, transparent 10%),
+        linear-gradient(to top, #0e0f0f, transparent 40%),
+        url("../imgs/bg_main_mobile.png");
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center;
@@ -73,6 +75,10 @@ body {
 
         ul {
           list-style: none;
+          
+          a{
+            text-decoration: none;
+          }
         }
       }
 
@@ -162,7 +168,9 @@ body {
       @extend .flex-col-center;
 
       .pic {
-        background-image: url(../imgs/bg_history_mobile.png);
+        background-image: linear-gradient(to bottom, #0e0f0f, transparent 30%),
+          linear-gradient(to top, #0e0f0f, transparent 60%),
+          url(../imgs/bg_history_mobile.png);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -242,7 +250,7 @@ body {
 
     section.video {
       padding-block: 2rem;
-      
+
       video {
         width: 100%;
       }
@@ -308,7 +316,8 @@ body {
     }
 
     section.personalPic {
-      background-image: url(../imgs/bg_personalPic_mobile.png);
+      background-image: linear-gradient(to bottom, #0e0f0f, transparent 20%),
+      linear-gradient(to top, #0e0f0f, transparent 60%),url(../imgs/bg_personalPic_mobile.png);
       height: 60vh;
       background-repeat: no-repeat;
       background-position: center;
@@ -363,7 +372,9 @@ body {
   body {
     main {
       section.home {
-        background-image: url(../imgs/bg_main_ipad.png);
+        background-image: linear-gradient(to bottom, #0e0f0f, transparent 10%),
+          linear-gradient(to top, #0e0f0f, transparent 40%),
+          url(../imgs/bg_main_ipad.png);
 
         nav.navbar {
           padding: 3rem;
@@ -489,7 +500,8 @@ body {
       }
 
       section.personalPic {
-        background-image: url(../imgs/bg_personalPic_ipad.png);
+        background-image: linear-gradient(to bottom, #0e0f0f, transparent 30%),
+        linear-gradient(to top, #0e0f0f, transparent 30%),url(../imgs/bg_personalPic_ipad.png);
         height: 60vh;
       }
 
@@ -515,7 +527,11 @@ body {
   body {
     main {
       section.home {
-        background-image: url(../imgs/bg_main_desktop.png);
+        background-image: linear-gradient(to left, #0e0f0f59, transparent 30%),
+          linear-gradient(to right, #0e0f0f59, transparent 30%),
+          linear-gradient(to bottom, #0e0f0f, transparent 10%),
+          linear-gradient(to top, #0e0f0f, transparent 40%),
+          url(../imgs/bg_main_desktop.png);
 
         img.title {
           top: 43%;
@@ -572,7 +588,8 @@ body {
       }
 
       section.personalPic {
-        background-image: url(../imgs/bg_personalPic_desktop.png);
+        background-image: linear-gradient(to right, #0e0f0f, transparent 40%),linear-gradient(to left, #0e0f0f, transparent 40%),linear-gradient(to bottom, #0e0f0f, transparent 30%),
+        linear-gradient(to top, #0e0f0f, transparent 30%),url(../imgs/bg_personalPic_desktop.png);
         height: 100vh;
       }
 

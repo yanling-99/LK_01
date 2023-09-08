@@ -38,7 +38,7 @@ body main section .sub_heading {
   color: #b5a997;
 }
 body main section.home {
-  background-image: url("../imgs/bg_main_mobile.png");
+  background-image: linear-gradient(to bottom, #0e0f0f, transparent 10%), linear-gradient(to top, #0e0f0f, transparent 40%), url("../imgs/bg_main_mobile.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -56,6 +56,9 @@ body main section.home nav.navbar {
 }
 body main section.home nav.navbar ul {
   list-style: none;
+}
+body main section.home nav.navbar ul a {
+  text-decoration: none;
 }
 body main section.home img {
   position: absolute;
@@ -118,7 +121,7 @@ body main section.about div.what_i_do div span {
   white-space: nowrap;
 }
 body main section.history .pic {
-  background-image: url(../imgs/bg_history_mobile.png);
+  background-image: linear-gradient(to bottom, #0e0f0f, transparent 30%), linear-gradient(to top, #0e0f0f, transparent 60%), url(../imgs/bg_history_mobile.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -239,7 +242,7 @@ body main section.beautiful .watchMore h4 {
   border-bottom: 1px solid #d35738;
 }
 body main section.personalPic {
-  background-image: url(../imgs/bg_personalPic_mobile.png);
+  background-image: linear-gradient(to bottom, #0e0f0f, transparent 20%), linear-gradient(to top, #0e0f0f, transparent 60%), url(../imgs/bg_personalPic_mobile.png);
   height: 60vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -282,7 +285,7 @@ body main section.connect img.logo_footer {
 
 @media (min-width: 768px) {
   body main section.home {
-    background-image: url(../imgs/bg_main_ipad.png);
+    background-image: linear-gradient(to bottom, #0e0f0f, transparent 10%), linear-gradient(to top, #0e0f0f, transparent 40%), url(../imgs/bg_main_ipad.png);
   }
   body main section.home nav.navbar {
     padding: 3rem;
@@ -381,7 +384,7 @@ body main section.connect img.logo_footer {
     bottom: 10%;
   }
   body main section.personalPic {
-    background-image: url(../imgs/bg_personalPic_ipad.png);
+    background-image: linear-gradient(to bottom, #0e0f0f, transparent 30%), linear-gradient(to top, #0e0f0f, transparent 30%), url(../imgs/bg_personalPic_ipad.png);
     height: 60vh;
   }
   body main section.connect {
@@ -400,7 +403,7 @@ body main section.connect img.logo_footer {
 }
 @media (min-width: 1280px) {
   body main section.home {
-    background-image: url(../imgs/bg_main_desktop.png);
+    background-image: linear-gradient(to left, rgba(14, 15, 15, 0.3490196078), transparent 30%), linear-gradient(to right, rgba(14, 15, 15, 0.3490196078), transparent 30%), linear-gradient(to bottom, #0e0f0f, transparent 10%), linear-gradient(to top, #0e0f0f, transparent 40%), url(../imgs/bg_main_desktop.png);
   }
   body main section.home img.title {
     top: 43%;
@@ -434,7 +437,7 @@ body main section.connect img.logo_footer {
     bottom: 15%;
   }
   body main section.personalPic {
-    background-image: url(../imgs/bg_personalPic_desktop.png);
+    background-image: linear-gradient(to right, #0e0f0f, transparent 40%), linear-gradient(to left, #0e0f0f, transparent 40%), linear-gradient(to bottom, #0e0f0f, transparent 30%), linear-gradient(to top, #0e0f0f, transparent 30%), url(../imgs/bg_personalPic_desktop.png);
     height: 100vh;
   }
   body main section.connect {

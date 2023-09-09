@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: #ffffff;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -30,7 +31,6 @@ body {
 body main {
   max-width: 1280px;
   width: 100%;
-  min-width: 320px;
 }
 body main section .sub_heading {
   font-size: 16px;
@@ -39,7 +39,7 @@ body main section .sub_heading {
 }
 body main section.home {
   background-image: linear-gradient(to bottom, #0e0f0f, transparent 10%), linear-gradient(to top, #0e0f0f, transparent 40%), url("../imgs/bg_main_mobile.png");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 773px;
@@ -148,8 +148,7 @@ body main section.history .desc .item, body main section.history .desc .no_line 
   width: 100%;
   border-bottom: 1px solid #b5a997;
   display: flex;
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+  column-gap: 1.5rem;
   padding: 1.5rem;
 }
 body main section.history .desc .item h4, body main section.history .desc .no_line h4 {
@@ -229,13 +228,12 @@ body main section.beautiful .watchMore {
   display: flex;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
+  column-gap: 0.5rem;
 }
 body main section.beautiful .watchMore img.be_icon {
   content: url(../imgs/img_behance.png);
 }
-body main section.beautiful .watchMore h4 {
+body main section.beautiful .watchMore a {
   color: #d35738;
   font-size: 1rem;
   font-weight: bold;
@@ -340,8 +338,7 @@ body main section.connect img.logo_footer {
     border-bottom: none;
     padding-inline: 0;
     padding-block: 0 4rem;
-    -moz-column-gap: 0;
-         column-gap: 0;
+    column-gap: 0;
   }
   body main section.history .desc .item h4, body main section.history .desc .no_line h4 {
     display: none;
@@ -393,8 +390,7 @@ body main section.connect img.logo_footer {
   }
   body main section.connect .content {
     flex-direction: row;
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+    column-gap: 2rem;
   }
   body main section.connect img.logo_footer {
     right: 5rem;
@@ -446,7 +442,6 @@ body main section.connect img.logo_footer {
     padding-block: 7rem;
   }
   body main section.connect .content {
-    -moz-column-gap: 6rem;
-         column-gap: 6rem;
+    column-gap: 6rem;
   }
 }/*# sourceMappingURL=style.css.map */

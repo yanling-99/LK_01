@@ -18,7 +18,7 @@ $lg: 1280px;
   box-sizing: border-box;
   color: $white;
   font-family: "Inter", sans-serif;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -58,7 +58,7 @@ body {
     section.home {
       background-image: linear-gradient(to bottom, #0e0f0f, transparent 10%),
         linear-gradient(to top, #0e0f0f, transparent 40%),
-        url("../imgs/bg_main_mobile.png");
+        url("/imgs/bg_main_mobile.png");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -76,8 +76,8 @@ body {
 
         ul {
           list-style: none;
-          
-          a{
+
+          a {
             text-decoration: none;
           }
         }
@@ -91,26 +91,26 @@ body {
         top: 50%;
         left: 50%;
         transform: translateX(-50%);
-        content: url("../imgs/img_title_mobile.png");
+        content: url("/imgs/img_title_mobile.png");
       }
 
       img.logo {
         bottom: 15%;
         right: 5%;
-        content: url("../imgs/logo_white_mobile.png");
+        content: url("/imgs/logo_white_mobile.png");
       }
 
       img.be_icon {
         bottom: 8%;
         left: 3%;
-        content: url("../imgs/img_behance.png");
+        content: url("/imgs/img_behance.png");
       }
 
       img.nextPage {
         bottom: 8%;
         left: 50%;
         transform: translateX(-50%);
-        content: url("../imgs/img_nextPage.png");
+        content: url("/imgs/img_nextPage.png");
       }
     }
 
@@ -171,7 +171,7 @@ body {
       .pic {
         background-image: linear-gradient(to bottom, #0e0f0f, transparent 30%),
           linear-gradient(to top, #0e0f0f, transparent 60%),
-          url(../imgs/bg_history_mobile.png);
+          url(/imgs/bg_history_mobile.png);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -288,7 +288,7 @@ body {
       }
 
       img.circles {
-        content: url(../imgs/img_beautiful_mobile.png);
+        content: url(/imgs/img_beautiful_mobile.png);
         position: absolute;
         right: 1rem;
         bottom: 20%;
@@ -301,7 +301,7 @@ body {
         // border: 1px solid red;
 
         img.be_icon {
-          content: url(../imgs/img_behance.png);
+          content: url(/imgs/img_behance.png);
           // border: 1px solid red;
         }
 
@@ -318,7 +318,8 @@ body {
 
     section.personalPic {
       background-image: linear-gradient(to bottom, #0e0f0f, transparent 20%),
-      linear-gradient(to top, #0e0f0f, transparent 60%),url(../imgs/bg_personalPic_mobile.png);
+        linear-gradient(to top, #0e0f0f, transparent 60%),
+        url(/imgs/bg_personalPic_mobile.png);
       height: 60vh;
       background-repeat: no-repeat;
       background-position: center;
@@ -360,7 +361,7 @@ body {
       }
 
       img.logo_footer {
-        content: url(../imgs/logo_footer.png);
+        content: url(/imgs/logo_footer.png);
         position: absolute;
         right: 1rem;
         bottom: 3rem;
@@ -375,7 +376,7 @@ body {
       section.home {
         background-image: linear-gradient(to bottom, #0e0f0f, transparent 10%),
           linear-gradient(to top, #0e0f0f, transparent 40%),
-          url(../imgs/bg_main_ipad.png);
+          url(/imgs/bg_main_ipad.png);
 
         nav.navbar {
           padding: 3rem;
@@ -384,11 +385,11 @@ body {
         img.title {
           left: 7%;
           transform: none;
-          content: url("../imgs/img_title_ipad.png");
+          content: url("/imgs/img_title_ipad.png");
         }
         img.logo {
           bottom: 8%;
-          content: url("../imgs/logo_white_ipad.png");
+          content: url("/imgs/logo_white_ipad.png");
         }
       }
 
@@ -426,7 +427,7 @@ body {
 
           img {
             display: block;
-            content: url(../imgs/img_history_ipad.png);
+            content: url(/imgs/img_history_ipad.png);
             // width: 100%;
             // border: 1px solid red;
           }
@@ -494,7 +495,7 @@ body {
         }
 
         img.circles {
-          content: url(../imgs/img_beautiful_ipad.png);
+          content: url(/imgs/img_beautiful_ipad.png);
           right: 5rem;
           bottom: 10%;
         }
@@ -502,7 +503,8 @@ body {
 
       section.personalPic {
         background-image: linear-gradient(to bottom, #0e0f0f, transparent 30%),
-        linear-gradient(to top, #0e0f0f, transparent 30%),url(../imgs/bg_personalPic_ipad.png);
+          linear-gradient(to top, #0e0f0f, transparent 30%),
+          url(/imgs/bg_personalPic_ipad.png);
         height: 60vh;
       }
 
@@ -532,15 +534,15 @@ body {
           linear-gradient(to right, #0e0f0f59, transparent 30%),
           linear-gradient(to bottom, #0e0f0f, transparent 10%),
           linear-gradient(to top, #0e0f0f, transparent 40%),
-          url(../imgs/bg_main_desktop.png);
+          url(/imgs/bg_main_desktop.png);
 
         img.title {
           top: 43%;
-          content: url("../imgs/img_title_desktop.png");
+          content: url("/imgs/img_title_desktop.png");
         }
         img.logo {
           right: 8%;
-          content: url("../imgs/logo_white_desktop.png");
+          content: url("/imgs/logo_white_desktop.png");
         }
       }
 
@@ -557,7 +559,7 @@ body {
       section.history {
         .pic {
           img {
-            content: url(../imgs/img_history_desktop.png);
+            content: url(/imgs/img_history_desktop.png);
           }
         }
 
@@ -582,15 +584,18 @@ body {
         }
 
         img.circles {
-          content: url(../imgs/img_beautiful_desktop.png);
+          content: url(/imgs/img_beautiful_desktop.png);
           right: 15%;
           bottom: 15%;
         }
       }
 
       section.personalPic {
-        background-image: linear-gradient(to right, #0e0f0f, transparent 40%),linear-gradient(to left, #0e0f0f, transparent 40%),linear-gradient(to bottom, #0e0f0f, transparent 30%),
-        linear-gradient(to top, #0e0f0f, transparent 30%),url(../imgs/bg_personalPic_desktop.png);
+        background-image: linear-gradient(to right, #0e0f0f, transparent 40%),
+          linear-gradient(to left, #0e0f0f, transparent 40%),
+          linear-gradient(to bottom, #0e0f0f, transparent 30%),
+          linear-gradient(to top, #0e0f0f, transparent 30%),
+          url(/imgs/bg_personalPic_desktop.png);
         height: 100vh;
       }
 

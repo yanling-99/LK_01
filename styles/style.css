@@ -26,7 +26,33 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #0e0f0f;
+  flex-direction: column;
+  min-width: 320px;
+}
+body header {
+  max-width: 1280px;
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  top: 0;
+  z-index: 2;
+}
+body header nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  line-height: 25px;
+  padding: 1rem;
+  text-align: right;
+  width: 100%;
+}
+body header nav.navbar ul {
+  list-style: none;
+}
+body header nav.navbar ul a {
+  text-decoration: none;
 }
 body main {
   max-width: 1280px;
@@ -45,20 +71,6 @@ body main section.home {
   height: 773px;
   position: relative;
   margin-bottom: 8rem;
-}
-body main section.home nav.navbar {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
-  line-height: 25px;
-  padding: 1rem;
-  text-align: right;
-}
-body main section.home nav.navbar ul {
-  list-style: none;
-}
-body main section.home nav.navbar ul a {
-  text-decoration: none;
 }
 body main section.home img {
   position: absolute;
@@ -190,6 +202,8 @@ body main section.video {
 }
 body main section.video video {
   width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 body main section.beautiful {
   position: relative;
@@ -280,6 +294,16 @@ body main section.connect img.logo_footer {
   right: 1rem;
   bottom: 3rem;
 }
+body footer span {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  font-style: italic;
+  font-size: 12px;
+}
+body footer span a {
+  font-weight: 700;
+  color: #d35738;
+}
 
 @media (min-width: 768px) {
   body main section.home {
@@ -308,6 +332,10 @@ body main section.connect img.logo_footer {
   }
   body main section.about div.what_i_do .text {
     font-size: 80px !important;
+  }
+  body main section.video video {
+    object-fit: contain;
+    height: fit-content;
   }
   body main section.history {
     flex-direction: row;

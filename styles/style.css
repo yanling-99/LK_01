@@ -281,7 +281,7 @@ body main section.connect .content {
   flex-direction: column;
   row-gap: 0.5rem;
 }
-body main section.connect .content .item p, body main section.connect .content section.history .desc .no_line p, body main section.history .desc section.connect .content .no_line p {
+body main section.connect .content .item a, body main section.connect .content section.history .desc .no_line a, body main section.history .desc section.connect .content .no_line a, body main section.connect .content .item p, body main section.connect .content section.history .desc .no_line p, body main section.history .desc section.connect .content .no_line p {
   color: #b5a997;
 }
 body main section.connect .content .item span, body main section.connect .content section.history .desc .no_line span, body main section.history .desc section.connect .content .no_line span {
